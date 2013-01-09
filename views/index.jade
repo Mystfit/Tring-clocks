@@ -1,0 +1,38 @@
+!!! 5
+html 
+    head 
+        title= title 
+        link(rel='stylesheet', href='css/jqueryUI/smoothness/jquery-ui-1.9.2.custom.min.css')
+        link(rel='stylesheet', href='http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css') 
+        link(rel='stylesheet', href='css/plugins/colorpicker.css') 
+        link(rel='stylesheet', href='css/plugins/jquery.gradientpicker.css') 
+        link(rel='stylesheet', href='css/plugins/iThing.css') 
+        link(rel='stylesheet', href='css/clocks.css') 
+
+        script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js')
+        script(src='//ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js')
+        script(src='http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js')
+        script(src='js/plugins/jQDateRangeSlider-min.js')
+        script(src='js/plugins/colorpicker.js')
+        script(src='js/plugins/jquery.gradientpicker.js')
+        script(src='js/d3/d3.v2.js')
+        script(src='js/tringjs/tringjs.js')
+        script(src='js/tringjs/api.js')
+        script(src='js/tringjs/dataformatter.js')
+        script(src='js/clocks.js')
+
+        script
+            $(document).ready(function() {  
+                TringClock.init();
+            });
+
+    body 
+        div(data-role="page", id="page1")
+            div(data-theme="a", data-role="header")
+                h3 Tring Clocks
+
+
+            div(data-role="content")
+                div.controls
+                    div#slider-data 
+                div#graphArea
